@@ -1,0 +1,29 @@
+---
+- name: Deploy Docker Image to Container
+  hosts: all
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
+  tasks:
+    - name: Remove Docker Container
+      docker_container:
+        name: calculator
+        image: krutik420/miniproj
+        state: absent
+    - name: Remove Docker Image
+      docker_image:
+        name: krutik420/miniproj
+        tag: latest
+        state: absent
+    - name: Pull Docker Image
+      docker_image:
+        name: krutik420/miniproj
+        tag: latest
+        source: pull
+        state: present
+    - name: Create & Start Calculator Docker Container
+      docker_container:
+        name: calculator
+        image: krutik420/miniproj
+        state: started
+        tty: yes
+        interactive: yes

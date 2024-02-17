@@ -1,0 +1,16 @@
+2023-03-21 16:35:03 INFO     [RESULT - Factorial] - 2
+2023-03-21 16:35:06 INFO     [Exit ] Program closed successfully by exec
+2023-03-21 16:39:07 ERROR    Value error is logged at fact.
+2023-03-21 16:39:07 ERROR    Value error is logged at natural log.
+2023-03-21 16:39:07 ERROR    Value error is logged at sqrt.
+2023-03-25 12:26:53 INFO     [RESULT - Factorial] - 120
+2023-03-25 12:27:04 INFO     [RESULT - Natural log] - 2.4849066497880004
+2023-03-25 12:27:06 INFO     [Exit ] Program closed successfully by exec
+2023-03-25 13:42:54 INFO     [Invalid Input] 
+2023-03-25 13:43:02 INFO     [Invalid Input] 
+2023-03-25 13:43:09 INFO     [RESULT - Natural log] - 1.791759469228055
+2023-03-25 13:43:13 INFO     [Exit ] Program closed successfully by exec
+2023-03-25 13:43:22 INFO     [RESULT - Factorial] - 40320
+2023-03-25 13:43:25 INFO     [RESULT - SquareRoot] - 2.8284271247461903
+2023-03-25 13:43:35 INFO     [RESULT - Power function] - 32.0
+2023-03-25 13:43:37 INFO     [Exit ] Program closed successfully by exec
