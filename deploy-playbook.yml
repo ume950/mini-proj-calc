@@ -7,23 +7,23 @@
     - name: Remove Docker Container
       docker_container:
         name: calculator
-        image: krutik420/miniproj
+        image: umeshjaware/miniproj
         state: absent
     - name: Remove Docker Image
       docker_image:
-        name: krutik420/miniproj
+        name: umeshjaware/miniproj
         tag: latest
         state: absent
     - name: Pull Docker Image
       docker_image:
-        name: krutik420/miniproj
+        name: umeshjaware/miniproj
         tag: latest
         source: pull
         state: present
     - name: Create & Start Calculator Docker Container
       docker_container:
         name: calculator
-        image: krutik420/miniproj
+        image: umeshjaware/miniproj
         state: started
         tty: yes
         interactive: yes
